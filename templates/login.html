@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso al sistema</title>
+    <style>
+        body {background-color:cyan;}
+        #login{border-style: groove;
+            border-color: darkblue;
+            border-width: thin;
+            padding: 10px;
+            width: 400px;
+            font-family: 'Courier New', Courier, monospace;
+            position: absolute;
+            left: 35%;
+            top: 30%; 
+            text-align: center;  
+        }
+        .boton{background-color: green;
+        }
+        .parrafo{font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div id="login">
+        <form action="/validar" method="post">
+        <img alt="Logo Escuela" class="ag-branding__img" height="147" src="https://escuelaing.s3.amazonaws.com/staging/images/logo-ecijg.width-380.png?AWSAccessKeyId=AKIAWFY3NGTFBJGCIWME&amp;Signature=D6lkYqVkMhzorbMrUCquU4JjcF0%3D&amp;Expires=1636469398" width="380">
+        <p class="parrafo">Usuario : <input type="text" name="usuario"></p>
+        <p class="parrafo">Contraseña : <input type="password" name="password"></p>
+        <p><input type="submit" class="boton" value="Ingresar"></p>
+        </form>
+    </div>
+</body>
+</html>
