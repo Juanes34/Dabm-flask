@@ -20,7 +20,6 @@ def validar():
         password=request.form['password']
         resultado=verificar(usuario,password)
         return resultado
-
 def verificar(usuario, password):
     cuentas=loadfromusers()
     cuent=False
@@ -37,8 +36,7 @@ def verificar(usuario, password):
     elif cuent==True and passw==False:
         return "Contraseña incorrecta"
     elif cuent==True and passw==True:
-        return "Datos válidos"
-
+        return render_template("menu.html",title="Sistema DABM")
 def loadfromusers():
     users=[]
     total=[]
