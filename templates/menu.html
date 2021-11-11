@@ -25,13 +25,21 @@
             box-shadow: 5px 5px 5px black;
         }
     </style>
+    <script>
+        function config(){
+            window.open('/config','_parent');
+        }
+        function monitor(){
+            window.open('/monitor','_parent');
+        }
+    </script>
 </head>
 <body style="background-image: url('/static/fondo.jpg')">
     <div class="card" id="menu">
         <div class="card-header">Menú principal</div>
         <div class="card-body">
-            <button type="button" class="btn btn-primary">Configuración</button>
-            <button type="button" class="btn btn-success">Monitor</button>
+            <button type="button" class="btn btn-primary" onclick="config()">Configuración</button>
+            <button type="button" class="btn btn-success" onclick="monitor()">Monitor</button>
         </div>
         <div class="card-footer">DABM-2021</div>
       </div>
